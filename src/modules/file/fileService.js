@@ -18,7 +18,7 @@ const handleFileUpload = async (socket) => {
             Key: `${Date.now()}-${file.name}`,
             Body: file.data,
             ContentType: file.type,
-            ACL: 'public-read',
+            // ACL: 'public-read',
         };
         try {
             const s3Upload = await s3.upload(params).promise();
