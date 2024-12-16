@@ -1,5 +1,5 @@
 const AWS = require('aws-sdk');
-const { Message } = require('../../models/Message');
+const { Message } = require('../../models/message');
 
 const s3 = new AWS.S3({
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,

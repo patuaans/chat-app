@@ -1,4 +1,4 @@
-const { Message } = require('../../models/Message');
+const { Message } = require('../../models/message');
 
 const handleConnection = async (socket) => {
   socket.on('new-user', async (username) => {
